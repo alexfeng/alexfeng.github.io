@@ -209,6 +209,109 @@
             
               
                 
+                <a class="post-title-link" href="/2016/01/05/codesmells(代码异味)/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-05T21:12:44+08:00" content="2016-01-05">
+              2016-01-05
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/05/codesmells(代码异味)/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/05/codesmells(代码异味)/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h1 id="CodeSmells(代码异味)">CodeSmells(代码异味)</h1><p>Code Smell 中文翻译一般为“代码异味”或者“代码味道”，发现Code Smell 预示着代码中存在着潜在的错误，开发人员可以通过发现Code Smell查找，追捕到潜在的问题。</p>
+<p>Code Smell 只是一种暗示，并非是“确定”的。</p>
+<h1 id="代码的价值">代码的价值</h1><ol>
+<li>代码是支持程序运行面向机器的</li>
+<li>代码是coder的产物是思想是逻辑是业务的衍生物</li>
+<li>代码是给维护人员维护的是给人看的</li>
+</ol>
+<p>基于以上第一点，写出的代码会有各种位运算，各种宏定义，3目运算交错的代码，这是面向程序理解的代码。就是一种bad smell</p>
+<h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run_server">Run server</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="keyword">id</span>)initWithFriendId:(<span class="built_in">NSString</span> *)friendId &#123;</span><br><span class="line">    <span class="keyword">self</span> = [<span class="keyword">super</span> init];</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2015/09/28/偏好设置无法载入问题/" itemprop="url">
                   偏好设置无法载入的问题
                 </a>
@@ -347,8 +450,7 @@
         
           <span itemprop="articleBody">
             
-              <h1 id="概念">概念</h1><p>iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster [^1]</p>
-<p>[^1]: Ref <a href="http://nshipster.com/nil/" target="_blank" rel="external">http://nshipster.com/nil/</a>.</p>
+              <h1 id="概念">概念</h1><p>iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自<a href="http://nshipster.com/nil/" target="_blank" rel="external">NSHipster</a></p>
 <h1 id="NULL_空指针">NULL 空指针</h1><p>C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objective-C是C的一个超集而引入的，可以理解为是空值，值类型。</p>
 <h1 id="nil_空对象指针">nil 空对象指针</h1><p>Objective-C在表示”不存在”的基础上定义了nil,用来表示指向一个不存在的对象指针，对象指针，对象指针，重要的话说三遍，虽然nil也可以表示0，当做值类型使用，但是要明确意义。</p>
 <h1 id="NSNull_空对象">NSNull 空对象</h1><p>NSNull在Foundation中使用，可以理解为将NULL或者nil进行包装或封装的对象，一般在NSArray，NSSet与NSDictionary 中不能出现nil值时使用。</p>
@@ -471,7 +573,7 @@
         
           <span itemprop="articleBody">
             
-              <h1 id="语义化版本号">语义化版本号</h1><p>语义化版本[^1]三个数字被定义为主要的（major），次要的（minor），和补丁（patch）版本号。例如，版本号1.2.3<br>[^1]: Ref <a href="http://semver.org" target="_blank" rel="external">http://semver.org</a>.</p>
+              <h1 id="语义化版本号">语义化版本号</h1><p><a href="http://semver.org" target="_blank" rel="external">语义化版本</a>三个数字被定义为主要的（major），次要的（minor），和补丁（patch）版本号。例如，版本号1.2.3 </p>
 <ul>
 <li>1是主要的（major）版本号</li>
 <li>2是次要的（minor）版本号</li>
@@ -487,6 +589,132 @@
 <li>如果当前版本2.10.22只修复了一些bug，新版本应该是多少？</li>
 </ol>
 <p>如果一个版本低于1.0.0,被认为是测试版，次要版本号（minor）增加可能意味着向后兼容的改变。</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2015/05/28/xcode使用instrument/" itemprop="url">
+                  Xcode使用Instrument（1)
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2015-05-28T12:56:30+08:00" content="2015-05-28">
+              2015-05-28
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/05/28/xcode使用instrument/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/28/xcode使用instrument/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h1 id="Xcode使用Instrument（1）">Xcode使用Instrument（1）</h1><h2 id="UIAutomation">UIAutomation</h2><p>UIAutomation是随iOS4.0系统一起发布的一款旨在iPhone Device/Simulator上可执行的自动化测试框架。</p>
+<h2 id="使用UIAutomation准备">使用UIAutomation准备</h2><ol>
+<li>被测试app源代码</li>
+<li>了解JavaScript</li>
+</ol>
+<h2 id="开始使用">开始使用</h2><ul>
+<li><p>测试脚本的导入</p>
+<ol>
+<li>使用Xcode打开被测试app工程</li>
+<li>command + i 打开Instrument</li>
+<li>选择Automation template -&gt;profile<br><img src="http://images.cnitblog.com/blog/147647/201409/141247390123688.jpg" alt=""></li>
+<li>command + R 停止 profile</li>
+<li>找到scripts 选择 add－&gt;import…<br><img src="http://images.cnitblog.com/blog/147647/201409/141249564657730.jpg" alt=""></li>
+<li>选择写好的测试脚本后会看到脚本list<br><img src="http://images.cnitblog.com/blog/147647/201409/141310448097586.jpg" alt=""></li>
+<li>在脚本list右边script可以看到脚本内容<br><img src="http://images.cnitblog.com/blog/147647/201409/141311547629548.png" alt=""></li>
+<li>command + R执行脚本<br><img src="http://images.cnitblog.com/blog/147647/201409/141312521991135.png" alt=""></li>
+<li><p>可以看到脚本测试log</p>
+<p>附上一个显示遍历UI元素树的脚本，保存为本地的showUIAElementTree.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DEMO_DELAY=2;&#10;var target = UIATarget.localTarget();&#10;var app = target.frontMostApp();&#10;&#10;//test functions&#10;&#10;function showCurrentViewInfo()&#123;&#10;&#9;UIALogger.logStart(&#34;show CurrentViewInfoTree&#34;);&#10;&#9;&#9;try&#123;&#10;&#9;&#9;&#9;//show the target logElementTree&#10;&#9;&#9;&#9;target.logElementTree();&#10;&#9;&#9;&#9;UIALogger.logPass();&#10;&#9;&#9;&#125; catch(error)&#123;&#10;&#9;&#9;&#9;UIALogger.logFail(error);&#10;&#9;&#9;&#125;&#10;&#9;&#125;&#10;&#10;//calling test functions&#10;showCurrentViewInfo();</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<ul>
+<li>录制测试脚本<br>  录制测试脚本，是录制用户操作而生成的测试脚本，是没有断言操作的<ol>
+<li>打开被测试app工程</li>
+<li>command + i 打开Instrument</li>
+<li>选择Automation template-&gt;profile</li>
+<li>command + R 停止profile</li>
+<li>在scripts 选择add-&gt;create…  会看到一个新脚本文件 看到脚本代码的下法有3个操作按钮<br><img src="http://images.cnitblog.com/blog/147647/201409/141313173562316.png" alt=""></li>
+<li>点击红色录制按钮，会启动app，你在设备或是模拟器上进行操作都会生成代码，点击停止录制按钮录制完成，后command</li>
+</ol>
+</li>
+</ul>
+<h3 id="note：">note：</h3><p>1: 在使用设备进行自动化测试有一点需要注意，在Release configuration 中选择使用Developer profile（不是Ad-Hoc Distrubution profile）。默认release 下profiling都已经完成。</p>
+<p>2：文档</p>
+<p>UIAutomation JavaScript API 参考文档：</p>
+<p><a href="http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html" target="_blank" rel="external">http://developer.apple.com/library/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html</a></p>
 
             
           </span>
@@ -574,8 +802,7 @@
         
           <span itemprop="articleBody">
             
-              <h1 id="苹果账户类型[^1]">苹果账户类型[^1]</h1><p>[^1]: Ref <a href="https://developer.apple.com/support/compare-memberships/" target="_blank" rel="external">https://developer.apple.com/support/compare-memberships/</a></p>
-<h1 id="个人帐号（Individual）">个人帐号（Individual）</h1><ul>
+              <h1 id="苹果账户类型"><a href="https://developer.apple.com/support/compare-memberships/" target="_blank" rel="external">苹果账户类型</a></h1><h1 id="个人帐号（Individual）">个人帐号（Individual）</h1><ul>
 <li>费用 $99/Year</li>
 <li>单人使用</li>
 <li>App Store 销售者只能显示个人ID</li>
@@ -593,7 +820,8 @@
 </li>
 <li>App Store 销售者只能显示个人ID</li>
 <li>100个iOS 设备UDID测试</li>
-<li>需要邓白氏编码[^2]（D-U-N-S）<br>[^2]:Ref <a href="https://developer.apple.com/program/enroll/dunsLookupForm.action" target="_blank" rel="external">https://developer.apple.com/program/enroll/dunsLookupForm.action</a><h1 id="企业帐号（Enterprise）">企业帐号（Enterprise）</h1></li>
+<li>需要<a href="https://developer.apple.com/program/enroll/dunsLookupForm.action" target="_blank" rel="external">邓白氏编码</a>（D-U-N-S）</li>
+<li><h1 id="企业帐号（Enterprise）">企业帐号（Enterprise）</h1></li>
 <li>费用 $299/Year</li>
 <li>账户权限管理（未知）</li>
 <li>App Store不可销售，只能企业内部应用</li>
@@ -605,95 +833,6 @@
 <li>苹果iOS开发者授权机构</li>
 <li>App Store不可销售，只能内部应用</li>
 </ul>
-<h2 id="参考">参考</h2>
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/24/你好，访客/" itemprop="url">
-                  你好，访客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-05-24T13:56:33+08:00" content="2015-05-24">
-              2015-05-24
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/24/你好，访客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/24/你好，访客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>本人2011年开始从事iOS开发，目前混迹于废都西安，一个历史悠久的城市。欢迎你来到我的blog，在这里你可以更我交流iOS方面的技术。</p>
-<p>我的github地址: <a href="http://github.com/alexfeng" target="_blank" rel="external">http://github.com/alexfeng</a>.</p>
 
             
           </span>
@@ -719,6 +858,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
         </div>
@@ -757,7 +900,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

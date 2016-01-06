@@ -51,22 +51,22 @@
 
 
 
-<meta name="description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster [^1]
-[^1]: Ref http://nshipster.com/nil/.
-NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objecti">
+<meta name="description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster
+NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objective-C是C的一个超集而引入的，可以理解为是空值，值类型。
+nil 空对象指针Obj">
 <meta property="og:type" content="article">
 <meta property="og:title" content="有关iOS开发中的"空"">
 <meta property="og:url" content="http://alexfeng.github.io/2015/07/24/有关iOS开发中的空/index.html">
 <meta property="og:site_name" content="alexfeng's blog">
-<meta property="og:description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster [^1]
-[^1]: Ref http://nshipster.com/nil/.
-NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objecti">
-<meta property="og:updated_time" content="2015-07-31T15:26:59.000Z">
+<meta property="og:description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster
+NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objective-C是C的一个超集而引入的，可以理解为是空值，值类型。
+nil 空对象指针Obj">
+<meta property="og:updated_time" content="2016-01-06T12:38:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="有关iOS开发中的"空"">
-<meta name="twitter:description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster [^1]
-[^1]: Ref http://nshipster.com/nil/.
-NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objecti">
+<meta name="twitter:description" content="概念iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster
+NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objective-C是C的一个超集而引入的，可以理解为是空值，值类型。
+nil 空对象指针Obj">
 
 
 
@@ -238,8 +238,7 @@ NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NUL
       
 
       
-        <span itemprop="articleBody"><h1 id="概念">概念</h1><p>iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自NSHipster [^1]</p>
-<p>[^1]: Ref <a href="http://nshipster.com/nil/" target="_blank" rel="external">http://nshipster.com/nil/</a>.</p>
+        <span itemprop="articleBody"><h1 id="概念">概念</h1><p>iOS开发中经常会碰到”空”的使用，这里提到的空包含NULL,nil,NSNull,Nil。在计算的逻辑世界中用逻辑的’存在’来表示现实世界中的”不存在”,这个概念来自<a href="http://nshipster.com/nil/" target="_blank" rel="external">NSHipster</a></p>
 <h1 id="NULL_空指针">NULL 空指针</h1><p>C 语言中0表示”不存在”表示空，在Objective-C中 NULL表示指针环境中的0，这是Objective-C是C的一个超集而引入的，可以理解为是空值，值类型。</p>
 <h1 id="nil_空对象指针">nil 空对象指针</h1><p>Objective-C在表示”不存在”的基础上定义了nil,用来表示指向一个不存在的对象指针，对象指针，对象指针，重要的话说三遍，虽然nil也可以表示0，当做值类型使用，但是要明确意义。</p>
 <h1 id="NSNull_空对象">NSNull 空对象</h1><p>NSNull在Foundation中使用，可以理解为将NULL或者nil进行包装或封装的对象，一般在NSArray，NSSet与NSDictionary 中不能出现nil值时使用。</p>
@@ -368,7 +367,7 @@ NULL 空指针C 语言中0表示”不存在”表示空，在Objective-C中 NUL
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
