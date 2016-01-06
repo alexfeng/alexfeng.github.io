@@ -177,6 +177,116 @@
 
     
     
+      
+      
+        
+        
+        
+      
+
+      
+    
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/06/升级xcode后的插件无效问题修改/" itemprop="url">
+                  升级Xcode后的插件无效问题修改
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-01-06T21:41:05+08:00" content="2016-01-06">
+              2016-01-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/06/升级xcode后的插件无效问题修改/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/06/升级xcode后的插件无效问题修改/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <span itemprop="articleBody">
+            
+              <h2 id="说明">说明</h2><p>在过去的一段时间中一直使用xcode5进行项目工作，同时xcode中安装了些插件，前几天更新了xcode6发现其中的插件基本废掉了，故而自己研究了下为什么xcode中的插件失效问题，现在将解决办法总结</p>
+<h2 id="原因">原因</h2><p>是由于使用Xcode使用的UUID在插件的DVTPlugInCompatibilityUUIDs 设置中没有导致，知道原因就好解决了，只需添加最新的XCode的UUID进DVTPlugInCompatibilityUUIDs 就应该Ok了</p>
+<h2 id="解决办法与操作">解决办法与操作</h2><ol>
+<li><p>打开terminal 输入命令:</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ open ~/Library/Application\ Support/Developer/	Shared/Xcode/Plug-ins/</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>看到的插件后使用鼠标查看包内容会看到 info.plist</p>
+</li>
+<li>打开info.plist 找到DVTPlugInCompatibilityUUIDs添加对应的UUID后重启Xcode对应的插件就可以使用了</li>
+</ol>
+<h2 id="附上UUID">附上UUID</h2><ul>
+<li>xcode6 UUID:C4A681B0-4A26-480E-93EC-1218098B9AA0</li>
+</ul>
+<h2 id="结论">结论</h2><p>使用此办法解决了我的插件不能用的问题，分享出来希望帮到遇到此问题的iOSer</p>
+
+            
+          </span>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
 
     
       
@@ -742,99 +852,14 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/05/24/你好，访客/" itemprop="url">
-                  你好，访客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-05-24T13:56:33+08:00" content="2015-05-24">
-              2015-05-24
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/05/24/你好，访客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/05/24/你好，访客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <p>本人2011年开始从事iOS开发，目前混迹于废都西安，一个历史悠久的城市。欢迎你来到我的blog，在这里你可以更我交流iOS方面的技术。</p>
-<p>我的github地址: <a href="http://github.com/alexfeng" target="_blank" rel="external">http://github.com/alexfeng</a>.</p>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
         </div>
@@ -873,7 +898,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
